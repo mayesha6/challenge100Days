@@ -11,10 +11,14 @@
 }
 
 /* faq section  */
+body{
+    background-color: #fbeeff;
+}
 .faq-section{
     width:100%;
     background-color: #fbeeff;
     height: 100vh;
+    padding-bottom: 60px;
 }
 .pre-faq{
     width: 100%;
@@ -29,7 +33,7 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    margin: 0 auto;
+    margin-bottom: 200px;
     color: #3c0c55;
     position: absolute;
     left: 50%;

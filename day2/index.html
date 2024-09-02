@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2 - Interactive rating component</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <section class="rating-section">
+        <div class="container">
+            <div class="rating-wrap">
+                <div class="rating-content" id="rating-content">
+                    <div class="title">
+                        <i class="fa-solid fa-star"></i>
+                        <h2>How did we do?</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia excepturi sint eligendi non voluptatem doloribus.</p>
+                    </div>
+                    <nav class="rate-nav">
+                        <ul id="rate">
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                        </ul>
+                    </nav>
+                    <div class="submit-btn">
+                        <button class="btn" id="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="submitted-state" id="submitted-state">
+                    <img src="assets/img/thank-you.svg" alt="">
+                    <h4>You selected <span id="show-rate">4</span> out of 5</h4>
+                    <h2>Thank you!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo natus quisquam deserunt porro voluptatibus ipsum architecto quos ea mollitia.</p>
+                </div>
+            </div>
+            
+        </div>
+   </section>
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
