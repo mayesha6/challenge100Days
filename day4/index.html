@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4 - coming soon page</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <section class="coming-soon-section">
+        <div class="container">
+            <div class="coming-soon">
+                <div class="logo">
+                    <img src="assets/img/logo.svg" alt="logo img">
+                </div>
+                <main class="coming-soon-wrap">
+                    <div class="coming-soon-content">
+                        <h1>
+                            <span>We're</span> coming soon
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi laborum nisi porro deserunt, necessitatibus voluptates?</p>
+                        <div class="emailForm">
+                            <form novalidate>
+                                <input type="email" name="" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email Address">
+                                <button type="submit" id="submit">
+                                    <img src="assets/img/icon-arrow.svg" alt="">
+                                </button>
+                            </form>
+                            <img src="assets/img/icon-error.svg" alt="" id="error-img">
+                            <small id="error-msg"></small>
+                        </div>
+                    </div>
+                    <div class="coming-soon-img">
+                        <div class="img-content">
+                            <img id="responsive-image" src="assets/img/hero-desktop.jpg" alt="hero img">
+                        </div>
+                    </div>
+                </main> 
+            </div>
+        </div>
+   </section>
+
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
