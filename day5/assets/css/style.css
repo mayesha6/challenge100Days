@@ -1,0 +1,136 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.container{
+    max-width: 1440px;
+    padding: 0px 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+/* pop-up-section */
+#pop-up-section{
+    width:400px;
+    background-color: var(--Green);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px ;
+    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -105%);
+    transition: 0.3s;
+}
+#pop-up-msg{
+    font-size:20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--white);
+}
+/* pop-up-section */
+
+/* login-section */
+.login-section{
+    width:100%;
+}
+.login-wrap{
+    width:100%;
+    background-image: url(../img/bg-intro-desktop.png);
+    background-color: var(--Red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    gap:30px
+}
+.login-intro,.login-form{
+    width:50%;
+}
+.login-intro h1{
+    font-size: 32px;
+    line-height:35px;
+    font-weight:800;
+    color:var(--white);
+    margin-bottom:20px;
+}
+.login-intro p{
+    color:var(--white);
+}
+.login-form .free-trial-msg, .login-form #submit {
+    padding: 12px 15px;
+    background-color: var(--Blue);
+    color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 28px;
+    text-align: center;
+}
+.login-form .form-content{
+    background-color: var(--white);
+    padding: 30px;
+    border-radius:10px;
+    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.form-content .form-input{
+    position: relative;
+}
+.form-content input{
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    display: block;
+    width:100%;
+    border:1px solid #eee;
+    border-radius: 4px;
+    transition: 0.3s;
+    color: var(--DarkBlue);
+    font-weight: 600;
+    font-size: 14px;
+}
+.form-content input::placeholder {
+    color: var(--GrayishBlue);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-content input:hover {
+    border:1px solid var(--GrayishBlue);
+}
+.form-input  .error-img {
+    position: absolute;
+    top:23%;
+    right: 10px;
+    width:20px;
+    display: none;
+}
+
+.form-content #submit{
+    border: 1px solid var(--Green);
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: var(--Green);
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.form-content .service-msg, .form-content .service-msg span{
+    font-size:12px;
+    color:var(--GrayishBlue);
+    padding: 12px 0px;
+    text-align: center;
+    font-weight:500;
+}
+.form-content .service-msg span{
+    color: var(--Red);
+}
+/* login-section */

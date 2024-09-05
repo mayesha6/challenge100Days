@@ -1,0 +1,63 @@
+
+@media only screen and (max-width: 989px) {
+    .login-wrap{
+        padding: 60px 40px;
+        gap:20px
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container{
+        padding: 0px;
+    }
+    .login-wrap{
+        height: 100vh;        
+        justify-content:center;
+    }
+    .login-wrap{
+        flex-direction: column;
+    }
+    .login-intro,.login-form{
+        width:100%;
+    }
+    .login-intro{
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .login-intro h1{
+        font-size: 29px;
+        margin-bottom:15px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #pop-up-section{
+        width:250px;
+        height: 100px;
+    }
+    #pop-up-msg{
+        font-size:14px;
+        padding: 0px 10px;
+        text-align: center;
+    }
+    .login-wrap{
+        padding: 20px;
+    }
+    .login-intro{
+        margin-bottom:15px;
+    }
+    .login-intro h1{
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom:10px;
+    }
+    .login-intro p{
+        font-size: 14px;
+    }
+    .login-form .free-trial-msg, .login-form #submit {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    .login-form .form-content {
+        padding:20px 15px;
+    }
+}
+
