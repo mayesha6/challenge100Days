@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 5 - Sign-up form</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <section class="calculator-section">
+      <div class="container">
+         <div class="calculator-wrap flex">
+            <div class="calculation">
+               <div class="calculation-header flex">
+                  <h3>Mortgage calculator</h3>
+                  <a href="#" id="clearAllData">clear all</a>
+               </div>
+               <div class="calculation-body">
+                  <form action="">
+                     <div class="mortgageAmountField">
+                        <label for="mortgageAmount">mortgage Amount</label>
+                        <div class="amount flex">
+                           <span class="change-color">৳</span><input type="text" placeholder="" id="mortgageAmount">
+                        </div>
+                        <p class="errorMsg">This field is required.</p>
+                     </div>
+                     <div class="mortgageTermAndInterest flex">
+                        <div class="mortgageTermField">
+                           <label for="mortgageTerm">mortgage term</label>
+                           <div class="term flex">
+                              <input type="text" placeholder="" id="mortgageTerm"><span class="change-color">years</span>
+                           </div>
+                           <p class="errorMsg">This field is required.</p>
+                        </div>
+                        <div class="interestRateField">
+                           <label for="interestRate">interest Rate</label>
+                           <div class="interest flex">
+                              <input type="text" placeholder="" id="interestRate"><span class="change-color">%</span>
+                           </div>
+                           <p class="errorMsg">This field is required.</p>
+                        </div>
+                     </div>
+                     <div class="mortgageTypeField">
+                        <label for="mortgageType">mortgage type</label>
+                        <div class="repaymentField">
+                           <input type="radio" name="typeOfMortgage" id="repayment">
+                           <label for="repayment">repayment</label>
+                        </div>
+                        <div class="interestField">
+                           <input type="radio" name="typeOfMortgage" id="interest">
+                           <label for="interest">interest only</label>
+                        </div>
+                        <p class="errorMsg">This field is required</p>
+                     </div>
+                     <div class="submitField">
+                        <button type="submit" id="calculate">
+                           <img src="assets/img/icon-calculator.svg" alt="">
+                           <span>calculate repayments</span>
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="output-wrap">
+               <div class="place-output">
+                  <img src="assets/img/illustration-empty.svg" alt="">
+                  <h3>results shown here</h3>
+                  <p>complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+               </div>
+               <div class="output">
+                  <h3>your results</h3>
+                  <p>your result is shown below based on the information you provide.</p>
+                  <div class="payment">
+                     <div class="monthlyPayment">
+                        <p id="onlyInterestText">Your monthly rerpayment</p>
+                        <h2>$ <span id="monthlyPay"></span></h2>
+                     </div>
+                     <div class="totalPayment">
+                        <p>Total you will repay over the term</p>
+                        <h3>$ <span id="totalPay"></span></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script src="assets/js/script.js"></script>
+</body>
+</html>

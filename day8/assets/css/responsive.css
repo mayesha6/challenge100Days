@@ -1,0 +1,33 @@
+
+@media only screen and (max-width: 800px) {
+    .calculator-wrap.flex {
+        flex-direction: column;
+    }
+    .calculation, .output-wrap {
+        width: 100%;
+    }
+    .output-wrap, .calculation, .calculator-wrap.flex{
+        border-radius: 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 0px;
+    }
+    .monthlyPayment h2, .monthlyPayment h2 span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .mortgageTermAndInterest.flex {
+        flex-direction: column;
+        gap: 0;
+    }
+    .mortgageTermField, .interestRateField {
+        width: 100%;
+    }
+    #calculate {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 6 - Product list with cart</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+
+     
+   
+</head>
+<body>
+   
+   <main>
+      <div class="container flex products-cart-wrap">
+         <section class="products-section">
+            <div class="products">
+               <h2 class="title">desserts</h2>
+               <div class="product-list" id="product-list">
+                  
+               </div>
+            </div>
+         </section>
+         <section class="cart-section">
+            <div class="cart-wrap">
+               <h3>Your cart (<span id="total-item">7</span>)</h3>
+               <div id="added-item">
+                  
+               </div>
+               <div class="total-price-section flex"  style="align-items:center">
+                  <h2>Total Price</h2>
+                  <p id="total-price">$0</p>
+               </div>
+            </div>
+         </section>
+      </div>
+   </main>
+   
+   <div class="cmenu-system">
+      <div class="container">
+         <div class="flex">
+            <div id="c-plus" onclick="increase(1)">
+                <i class="fa-solid fa-plus"></i>
+            </div>              
+            <span id="c-cart">1</span>
+            <div id="c-minus" onclick="decrease(1)">
+                <i class="fa-solid fa-minus"></i>
+            </div>
+          </div>
+      </div>
+   </div>
+
+</body>
+<script src="assets/js/script2.js"></script>
+</html>

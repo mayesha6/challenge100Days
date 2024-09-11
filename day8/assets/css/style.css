@@ -1,0 +1,195 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.container{
+    max-width: 1440px;
+    padding: 0px 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+body{
+    background-color: var(--Slate100);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px
+}
+h3{
+    font-size:24px;
+    line-height: 34px;
+    padding-bottom: 15px ;
+    text-transform: capitalize;
+}
+label {
+    display: block;
+    text-transform: capitalize;
+    margin-top:25px;
+}
+input{
+    display: block;
+    width:100%;
+    border: none;
+}
+
+/* calculator-section */
+.calculator-section{
+    min-height:460px;
+    width:100%
+}
+.calculator-wrap.flex {
+    min-height: 460px;
+    background: var(--White);
+    border-radius: 20px;
+    width:100%;
+}
+.calculation, .output-wrap{
+    width:50%;
+    padding: 30px;
+    height: 100%;
+}
+.calculation {
+    border-radius: 20px;
+    color: var(--Slate900);
+}
+
+.calculation-header a{
+    color: var(--Slate900);
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.calculation-header a:hover{
+    color: var(--Slate500);
+}
+
+.repaymentField label, .interestField label{
+    display: inline-block;
+    margin-top: 0;
+}
+.repaymentField input, .interestField input{
+    display: inline-block;
+    width: 10px;
+}
+.amount, .term, .interest, .repaymentField, .interestField {
+    border-radius: 5px;
+    border: 1px solid var(--Slate900);
+    margin-top: 10px;
+}
+.amount {
+    padding-right:10px;
+}
+.term, .interest {
+    padding-left:10px;
+}
+ .repaymentField, .interestField {
+    padding: 10px;
+}
+.amount:hover, .term:hover, .interest:hover, .repaymentField:hover, .interestField:hover {
+    border: 1px solid var(--Lime);
+}
+input#mortgageAmount, input#mortgageTerm, input#interestRate, .repaymentField label, .interestField label {
+    font-weight: 700;
+    color: var(--slate900);
+}
+.mortgageTermField, .interestRateField{
+    width:50%;
+}
+.amount span, .term span, .interest span {
+    color: var(--Slate900);
+    background: var(--Slate100);
+    display: inline;
+    width: 60px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    height: 100%;
+    display: block;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+}
+.term span, .interest span {
+    border-radius: 0px 5px 5px 0px;
+}
+#calculate {
+    background: var(--Lime);
+    color: var(--Slate900);
+    border: 0;
+    padding: 15px 60px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#calculate img {
+    margin: -7px;
+}
+#calculate span {
+    margin-left: 8px;
+    font-weight: 700;
+}
+.errorMsg{
+    color:red;
+    visibility: hidden;
+}
+
+/* output */
+.output-wrap {
+    background-color: var(--Slate900);
+    color: var(--White);
+    border-radius: 0px 20px 20px 80px;
+    text-align: center;
+    min-height: 581px;
+}
+
+.place-output {
+    padding: 80px 0px;
+}
+.place-output p {
+    color: var(--Slate100);
+}
+.output{
+    display: none;
+    text-align: left;
+}
+.output p {
+    color: var(--Slate300);
+    padding: 5px 0 28px;
+}
+.payment {
+    background: var(--Slate1000);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--Lime);
+}
+.monthlyPayment {
+    border-bottom: 1px solid var(--Slate700);
+}
+.monthlyPayment p, .totalPayment p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px 10px;
+}
+.monthlyPayment h2,.monthlyPayment h2 span {
+    color: var(--Lime);
+    font-size: 64px;
+    line-height: 74px;
+    padding-bottom: 20px;
+}
+.totalPayment{
+    padding-top:30px;
+}
+.totalPayment h3{
+    padding: 0;
+}
