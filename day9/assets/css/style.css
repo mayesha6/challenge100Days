@@ -1,0 +1,116 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.container{
+    max-width: 1440px;
+    padding: 0px 25px;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--OffWhite);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+/* age-calculator-section */
+.age-calculator-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.age-calculator {
+    width: 620px;
+    background: var(--White);
+    margin: 0 auto;
+    padding: 40px 50px;
+    border-radius: 20px 20px 102px 20px;
+}
+.DoB {
+    color: var(--OffBlack);
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.inputField label {
+    color: var(--SmokeyGrey);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 3px;
+}
+.inputField input {
+    width: 120px;
+    height: 50px;
+    border: 1px solid var(--LightGrey);
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: var(--OffBlack);
+    font-size: 24px;
+    font-weight: 700;
+}
+.error-msg {
+    color: var(--LightRed);
+    font-size: 13px;
+    font-weight: 700;
+    visibility: hidden;
+}
+.SubmitField {
+    position: relative;
+    margin: 10px 0px;
+}
+.submit-icon {
+    /* text-align: right; */
+    /* display: inline-block; */
+    display: flex;
+    justify-content: end;
+}
+.submit-icon img {
+    display: block;
+    background: var(--Purple);
+    margin-bottom: -5px;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+}
+.submit-btn {
+    background: transparent;
+    border: 0;
+    display: block;
+    width:100%;
+}
+.divide {
+    width: 95%;
+    height: 2px;
+    background: var(--LightGrey);
+    position: relative;
+    top: 50%;
+    transform: translate(0px,34px);
+}
+
+/* outputField */
+.outputField h2, .outputField h2 span {
+    font-size: 72px;
+    line-height: 74px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: var(--OffBlack);
+    font-style: italic;
+}
+.outputField h2 span {
+    color: var(--Purple);
+    padding-right: 12px;
+    display: inline-block;
+    text-align: end;
+}

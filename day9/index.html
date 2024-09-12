@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 9 - Age Calculator</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <section class="age-calculator-section">
+      <div class="container">
+         <div class="age-calculator">
+            <div class="inputField">
+               <h2 class="DoB">Enter your Date of Birth :</h2>
+               <form action="">
+                  <div class="flex">
+                     <div class="birthDateField">
+                        <label for="birthDate">Day</label>
+                        <input type="text" name="" id="birthDate" placeholder="DD">
+                        <p class="error-msg" id="birthDateErr">Enter valid number.</p>
+                     </div>
+                     <div class="birthMonthField">
+                        <label for="birthMonth">month</label>
+                        <input type="text" name="" id="birthMonth" placeholder="MM">
+                        <p class="error-msg" id="birthMonthErr">Enter valid number.</p>
+                     </div>
+                     <div class="birthYearField">
+                        <label for="birthYear">year</label>
+                        <input type="text" name="" id="birthYear" placeholder="YYYY">
+                        <p class="error-msg" id="birthYearErr">Enter valid number.</p>
+                     </div>
+                  </div>
+                  <div class="SubmitField">
+                     <button type="submit" class="submit-btn">
+                        <div class="divide"></div>
+                        <div class="submit-icon" id="submit">
+                           <img src="assets/img/icon-arrow.svg" alt="">
+                        </div>
+                     </button>
+                  </div>
+               </form>
+            </div>
+            <div class="outputField">
+               <h2><span id="years">--</span>years</h2>
+               <h2><span id="months">--</span>months</h2>
+               <h2><span id="days">--</span>days</h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
