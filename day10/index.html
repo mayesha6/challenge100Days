@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 10 - intro section</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <header class="header-section">
+      <div class="container mx-auto">
+         <div class="header-wrap flex items-center justify-between lg:justify-start gap-20 py-4">
+            <div class="logo">
+               <img src="assets/images/logo.svg" alt="" class="w-full">
+            </div>
+            <div class="menu hidden lg:block w-full"  id="menu">
+               <div class=" flex lg:flex-row flex-col justify-start lg:justify-between gap-8 lg:w-full w-[250px] lg:relative absolute top-0 right-0  bg-white lg:bg-transparent shadow-lg lg:shadow-none ps-10 lg:ps-0 h-lvh lg:h-auto">
+                  <div class="cursor-pointer close-menu hidden relative bg-white z-[10]" id="close-icon">
+                     <img src="assets/images/icon-close-menu.svg" alt="" class="block absolute top-6 right-8">
+                  </div>
+                  <nav class="main-menu relative top-16 lg:top-0">
+                     <ul class="flex flex-col lg:flex-row gap-x-10">
+                        <li class="relative group">
+                           <a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base block py-2 flex items-center group" href="#" id="features">
+                              features 
+                              <i class="fa-solid fa-angle-down ps-1 group-hover:hidden block" id="up-arrow"></i>
+                              <i class="fa-solid fa-angle-up ps-1 hidden group-hover:block" id="down-arrow"></i>
+                           </a>
+                           <nav class="dropdown-menu relative lg:absolute top-0 lg:top-10 bg-white py-3 px-5 rounded-lg lg:shadow-md lg:w-[150px] w-lvw hidden group-hover:block" id="features-dropdown-menu">
+                              <ul>
+                                 <li class="flex gap-4 pb-2">
+                                    <img src="assets/images/icon-todo.svg" alt="" class="object-contain">
+                                    <a href="#" class="block capitalize">todo list</a>
+                                 </li>
+                                 <li class="flex gap-4 pb-2">
+                                    <img src="assets/images/icon-calendar.svg" alt="" class="object-contain">
+                                    <a href="#" class="block capitalize">calendar</a>
+                                 </li>
+                                 <li class="flex gap-4 pb-2">
+                                    <img src="assets/images/icon-reminders.svg" alt="" class="object-contain">
+                                    <a href="#" class="block capitalize">reminder</a>
+                                 </li>
+                                 <li class="flex gap-4 pb-2">
+                                    <img src="assets/images/icon-planning.svg" alt="" class="object-contain">
+                                    <a href="#" class="block capitalize">planning</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </li>
+                        <li class="relative group">
+                           <a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base block py-2 flex items-center" href="#" id="company">
+                              company
+                              <i class="fa-solid fa-angle-down ps-1 block group-hover:hidden" id="up-arrow"></i>
+                              <i class="fa-solid fa-angle-up ps-1 hidden group-hover:block" id="down-arrow"></i>
+                           </a>
+                           <nav class="dropdown-menu relative lg:absolute top-0 lg:top-10 bg-white py-3 px-5 rounded-lg lg:shadow-md lg:w-[100px] w-lvw hidden group-hover:block" id="company-dropdown-menu">
+                              <ul>
+                                 <li class="flex gap-4 pb-2">
+                                    <a href="#" class="block capitalize">history</a>
+                                 </li>
+                                 <li class="flex gap-4 pb-2">
+                                    <a href="#" class="block capitalize">our team</a>
+                                 </li>
+                                 <li class="flex gap-4 pb-2">
+                                    <a href="#" class="block capitalize">blog</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </li>
+                        <li class=""><a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base block py-2" href="#">careers</a></li>
+                        <li class=""><a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base block py-2" href="#">about</a></li>
+                     </ul>
+                  </nav>
+                  <nav class="login-menu relative top-16 lg:top-0">
+                     <ul class="flex flex-col lg:flex-row gap-x-10 text-center lg:text-left">
+                        <li class=""><a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base block py-2" href="#">login</a></li>
+                        <li class=""><a class="text-[--MediumGray] hover:text-[--AlmostBlack] duration-300 capitalize font-bold text-base inline-block my-2 lg:my-0 py-2 px-5 border border-[--MediumGray] hover:border-[--AlmostBlack] rounded-2xl" href="#">register</a></li>
+                     </ul>
+                  </nav>
+                  
+               </div>
+            </div>
+            <div class="cursor-pointer menu-bar lg:hidden" id="menu-icon">
+               <img src="assets/images/icon-menu.svg" alt="" >
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- start hero section  -->
+    <section class="hero-section my-20">
+      <div class="container mx-auto">
+         <div class="hero-wrap flex md:flex-row flex-col justify-between lg:gap-x-20 md:gap-x-10 gap-y-20 items-center">
+            <div class="hero-content xl:pe-32 pe-0">
+               <h1 class="text-[--AlmostBlack] lg:text-7xl md:6xl sm:text-5xl text-4xl font-bold">Make remote work</h1>
+               <p class="text-base text-[--MediumGray] my-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis incidunt cumque sed ducimus at nostrum necessitatibus? Deserunt, dolorem! Neque.</p>
+               <a href="#" class="bg-[--AlmostBlack] text-white font-bold text-base inline-block py-2 px-3 hover:bg-[--MediumGray] duration-300 rounded-lg">Learn more</a>
+               <nav class="mt-9">
+                  <ul class="flex justify-between items-center gap-10">
+                     <li>
+                        <a href="#">
+                           <img src="assets/images/client-databiz.svg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="assets/images/client-audiophile.svg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="assets/images/client-meet.svg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="assets/images/client-maker.svg" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="hero-img">
+               <!-- <img src="assets/images/image-hero-desktop.png" alt=""> -->
+               <img class="hidden md:block 2xl:w-2/3 w-full ms-auto" src="assets/images/image-hero-desktop.png" alt="Responsive Image">
+               <img class="block md:hidden" src="assets/images/image-hero-mobile.png" alt="Responsive Image">
+            </div>
+         </div>
+      </div>
+    </section>
+   <!-- end hero section  -->
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
