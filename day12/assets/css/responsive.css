@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1300px) {
+    .container{
+        padding: 0px 35px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    
+    .container{
+        padding: 0px 25px;
+    }
+    .menu{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .menu ul {
+        position: absolute;
+        top: 49px;
+        z-index: 6;
+        width: 100vw;
+        background: #fff;
+        left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+    .menu ul li {
+        display: block;
+    }
+    input[type="submit"] {
+        margin-left: 0px;
+    }
+}

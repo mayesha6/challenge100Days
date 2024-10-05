@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 11 - Interactive card details form</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+   <section class="interactive-card-section">
+      <div class="container-fluid mx-auto">
+         <div class="interactive-card-wrap flex flex-col xl:flex-row justify-between items-center gap-y-32">
+            <div class="interactive-card-img relative w-full">
+               <img src="assets/images/bg-main-desktop.png" alt="" class="relative xl:block hidden h-lvh w-[450px]">
+               <img src="assets/images/bg-main-mobile.png" alt="" class="relative block xl:hidden w-full h-[320px]">
+               <div class="front-card absolute top-40 right-56 xl:right-0 xl:left-36 z-[2]">
+                  <img src="assets/images/bg-card-front.png" alt="" class="max-w-md block">
+                  <div class="relative py-4 -top-52">
+                     <img src="assets/images/card-logo.svg" alt="" class="px-4">
+                     <h2 class="text-4xl text-white py-5 px-4 max-w-md text-center">0000 0000 0000 0000</h2>
+                     <div class="flex justify-between items-center text-base text-white max-w-md px-4">
+                        <h3 class="uppercase" id="card-name">name</h3>
+                        <h3 id="card-exp-date">
+                           <span id="month">00</span>/<span id="year">00</span>
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="back-card absolute xl:bottom-52 top-6 xl:top-auto xl:left-60 right-20">
+                  <img src="assets/images/bg-card-back.png" alt="" class="max-w-md block">
+                  <p class="text-white absolute top-[109px] right-12">000</p>
+               </div>
+            </div>
+            <div class="interactive-card-content flex items-center w-full relative xl:left-16 left-0 z-[7]">
+               <form class="w-full xl:max-w-lg  mx-20 relative">
+                  <div class="cardholder-name-wrap">
+                     <label for="cardholder-name" class="block uppercase tracking-widest text-[--VeryDarkViolet] font-semibold mb-1">cardholder name</label>
+                     <input type="text" id="cardholder-name" placeholder="e.g. jane Appleseed" class="border border-[--LightGrayishViolet] capitalize p-2 rounded block w-full outline-none text-[--DarkGrayishViolet]">
+                  </div>
+                  <div class="card-number-wrap">
+                     <label for="card-number" class="block  uppercase tracking-widest text-[--VeryDarkViolet] font-semibold mt-4 mb-1">card number</label>
+                     <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 4560" class="border border-[--LightGrayishViolet] capitalize p-2 rounded block w-full outline-none text-[--DarkGrayishViolet]">
+                  </div>
+                  <div class="date-cvc-wrap flex justify-between items-center gap-2">
+                     <div class="date-wrap w-1/2">
+                        <label for="exp-date" class="block uppercase tracking-widest text-[--VeryDarkViolet] font-semibold mt-4 mb-1">exp. date (mm/yy)</label>
+                        <div class="flex gap-2">
+                           <input type="text" id="exp-date" placeholder="MM" class="border border-[--LightGrayishViolet] capitalize p-2 rounded block w-full outline-none text-[--DarkGrayishViolet]">
+                           <input type="text" placeholder="YY" class="border border-[--LightGrayishViolet] capitalize p-2 rounded block w-full outline-none text-[--DarkGrayishViolet]">
+                        </div>
+                     </div>
+                     <div class="cvc-wrap w-1/2">
+                        <label for="cvc" class="block uppercase tracking-widest text-[--VeryDarkViolet] font-semibold mt-4 mb-1">cvc</label>
+                        <input type="text" id="cvc" placeholder="e.g. 123" class="border border-[--LightGrayishViolet] capitalize p-2 rounded block w-full outline-none text-[--DarkGrayishViolet]">
+                     </div>
+                  </div>
+                  <div class="submit-wrap">
+                     <button type="submit" class="block bg-black text-white capitalize w-full mt-7 py-3 rounded-lg">confirm</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <!-- swiper cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- tailwind link -->
+    <link  rel="stylesheet" href="assets/css/main-style.css">
+    
+</head>
+<body>
+    <!-- start header section  -->
+    <header class="header-section">
+        <div class="container mx-auto">
+            <div class="header-wrap flex justify-between items-center gap-5">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">home</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">about me</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">services</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">projects</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">testimonials</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">contact</a></li>
+                        <li class=""><a href="#" class="common-button bg-[--primaryColor] text-[--whiteColor] px-6 py-2 rounded-md inline-block duration-300 hover:bg-[--blackColor]">Download CV</a></li>
+                    </ul>
+                </nav>
+                <div id="menu-icon" class="menu-icon">
+                    <i class="fa-solid fa-bars-staggered text-2xl hover:text-[--primaryColor] duration-300 cursor-pointer text-[--blackColor]"></i>
+                </div>
+                <div id="menu-close-btn" class="menu-close-btn">
+                    <i class="fa-solid fa-xmark text-2xl hover:text-[--primaryColor] duration-300 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section  -->
+
+    <!-- start hero section  -->
+    <section class="hero-section my-20">
+        <div class="container mx-auto">
+            <div class="hero-wrap flex lg:flex-row flex-col items-center justify-between gap-x-5 gap-y-10">
+                <div class="hero-content max-w-[670px] order-2 lg:order-1">
+                    <h3 class="text-xl sm:text-2xl font-semibold">Hi I am</h3>
+                    <h2 class="text-[--primaryColor] font-semibold text-2xl sm:text-[32px] leading-[48px] capitalize">muhammad umair</h2>
+                    <h1><span class="text-6xl md:text-[100px] md:leading-[120px] font-bold block">UI & UX</span> <span class="text-6xl md:text-[100px] md:leading-[120px] leading-[120px] font-bold text-right block">Designer</span></h1>
+                    <p class="leading-8 text-justify pt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint quo maiores, nisi aspernatur hic tempora, a cumque debitis magnam, explicabo at!</p>
+                    <a href="#" class="common-button bg-[--primaryColor] text-[--whiteColor] px-6 py-2 rounded-md inline-block duration-300 hover:bg-[--blackColor] my-6">Hire Me</a>
+                </div>
+                <div class="hero-img relative order-1 lg:order-2">
+                    <img src="assets/img/hero-img.png" alt="" class="ms-auto relative md:max-w-[500px]">
+                    <div class="mask w-[300px] h-[70px] bg-[--bgImgColor] absolute top-14 sm:top-16 left-[50%] translate-x-[-50%]"></div>
+                    <nav class="social-media">
+                        <ul class="text-center py-4">
+                            <li class="pe-2"><a href="#"><i class="fa-brands fa-facebook text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                            <li class="px-2"><a href="#"><i class="fa-brands fa-twitter text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                            <li class="px-2"><a href="#"><i class="fa-brands fa-instagram text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                            <li class="px-2"><a href="#"><i class="fa-brands fa-linkedin text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section  -->
+
+    <!-- start about me section  -->
+    <section class="about-section my-20">
+        <div class="container mx-auto">
+            <div class="about-wrap flex lg:flex-row flex-col items-center justify-between gap-x-5 gap-y-10">
+                <div class="about-img  relative">
+                    <img src="assets/img/about-img.png" alt="" class="ms-auto relative md:max-w-[500px]">
+                    <div class="mask w-[300px] h-[60px] sm:h-[70px] bg-[--bgImgColor] absolute top-14 left-[50%] translate-x-[-50%]"></div>
+                </div>
+                <div class="about-content max-w-[670px]">
+                    <h2 class="text-4xl md:text-[65px] md:leading-[97px] capitalize font-bold">about me</h2>
+                    <p class="leading-8 text-justify pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eos, maiores et officiis nam expedita explicabo tenetur soluta inventore unde enim optio odio vero fugit blanditiis laboriosam debitis excepturi aliquid.</p>
+                    <div class="my-skills py-5">
+                        <div class="single-skill mb-4">
+                            <h4 class="font-semibold pb-2">UX</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-[--primaryColor] h-2.5 rounded-full relative before:absolute before:w-[18px] before:h-[18px] before:bg-[--whiteColor] before:rounded-full before:border before:border-[--primaryColor] before:right-0 before:top-[-3px]" style="width: 90%"></div>
+                            </div>  
+                        </div>
+                        <div class="single-skill mb-4">
+                            <h4 class="font-semibold pb-2">Website Design</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-[--primaryColor] h-2.5 rounded-full relative before:absolute before:w-[18px] before:h-[18px] before:bg-[--whiteColor] before:rounded-full before:border before:border-[--primaryColor] before:right-0 before:top-[-3px]" style="width: 80%"></div>
+                            </div>  
+                        </div>
+                        <div class="single-skill mb-4">
+                            <h4 class="font-semibold pb-2">App Design</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-[--primaryColor] h-2.5 rounded-full relative before:absolute before:w-[18px] before:h-[18px] before:bg-[--whiteColor] before:rounded-full before:border before:border-[--primaryColor] before:right-0 before:top-[-3px]" style="width: 97%"></div>
+                            </div>  
+                        </div>
+                        <div class="single-skill">
+                            <h4 class="font-semibold pb-2">Graphic Design</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-[--primaryColor] h-2.5 rounded-full relative before:absolute before:w-[18px] before:h-[18px] before:bg-[--whiteColor] before:rounded-full before:border before:border-[--primaryColor] before:right-0 before:top-[-3px]" style="width: 90%"></div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about us section  -->
+
+    <!-- start services section  -->
+    <section class="services-section my-20">
+        <div class="container mx-auto">
+            <div class="services-wrap">
+                <div class="title max-w-[800px] mx-auto">
+                    <h2 class="text-4xl md:text-[65px] md:leading-[97px] capitalize font-bold text-center">Services</h2>
+                    <p class="leading-6 pt-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eos, maiores et officiis nam expedita explicabo tenetur soluta inventore.</p>
+                </div>
+                <div class="services pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div class="single-service bg-[--serviceBgColor] p-5 rounded-xl">
+                        <img src="assets/img/ui.jpg" alt="">
+                        <h3 class="font-semibold text-[32px] pt-2 pb-1">UI/UX</h3>
+                        <p class="text-base">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div>
+                    <div class="single-service bg-[--serviceBgColor] p-5 rounded-xl">
+                        <img src="assets/img/web.png" alt="">
+                        <h3 class="font-semibold text-[32px] pt-2 pb-1">Web Design </h3>
+                        <p class="text-base">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div>
+                    <div class="single-service bg-[--serviceBgColor] p-5 rounded-xl">
+                        <img src="assets/img/app.png" alt="">
+                        <h3 class="font-semibold text-[32px] pt-2 pb-1">App Design</h3>
+                        <p class="text-base">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div>
+                    <div class="single-service bg-[--serviceBgColor] p-5 rounded-xl">
+                        <img src="assets/img/graphics.png" alt="">
+                        <h3 class="font-semibold text-[32px] pt-2 pb-1">Graphic Design </h3>
+                        <p class="text-base">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services section  -->
+
+    <!-- start projects section  -->
+     <section class="projects-section my-20">
+        <div class="container mx-auto">
+            <div class="projects-wrap">
+                <div class="title max-w-[800px] mx-auto">
+                    <h2 class="text-4xl md:text-[65px] md:leading-[97px] capitalize font-bold text-center">my projects</h2>
+                    <p class="leading-6 pt-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eos, maiores et officiis nam expedita explicabo tenetur soluta inventore.</p>
+                </div>
+                <nav class="projects-menu pt-10">
+                    <ul class="text-center">
+                        <li class="pe-1 lg:pe-2 pb-2 lg:pb-0"><a href="#" class="block text-xs lg:text-xl capitalize bg-[--serviceBgColor] border px-2 lg:px-3 py-1 rounded-lg hover:bg-[--primaryColor] hover:text-[--whiteColor] duration-300">all</a></li>
+                        <li class="pe-1 lg:pe-2 pb-2 lg:pb-0"><a href="#" class="block text-xs lg:text-xl capitalize bg-[--serviceBgColor] border px-2 lg:px-3 py-1 rounded-lg hover:bg-[--primaryColor] hover:text-[--whiteColor] duration-300">UI/UX</a></li>
+                        <li class="pe-1 lg:pe-2 pb-2 lg:pb-0"><a href="#" class="block text-xs lg:text-xl capitalize bg-[--serviceBgColor] border px-2 lg:px-3 py-1 rounded-lg hover:bg-[--primaryColor] hover:text-[--whiteColor] duration-300">web design</a></li>
+                        <li class="pe-1 lg:pe-2 pb-2 lg:pb-0"><a href="#" class="block text-xs lg:text-xl capitalize bg-[--serviceBgColor] border px-2 lg:px-3 py-1 rounded-lg hover:bg-[--primaryColor] hover:text-[--whiteColor] duration-300">app design</a></li>
+                        <li class=""><a href="#" class="block text-xs lg:text-xl capitalize bg-[--serviceBgColor] border px-2 lg:px-3 py-1 rounded-lg hover:bg-[--primaryColor] hover:text-[--whiteColor] duration-300">graphic design</a></li>
+                    </ul>
+                </nav>
+                <div class="project pt-14 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
+                    <div class="single-project">
+                        <div class="single-project-img bg-[--projectBg] px-4 rounded-lg">
+                            <div class="relative max-w-[445px] mx-auto">
+                                <img src="assets/img/project1.png" alt="" class="max-w-[274px] absolute bottom-[-3px] left-5">
+                                <img src="assets/img/project-bg-1.png" alt="" class="max-w-[274px] ms-auto">
+                            </div>
+                        </div>
+                        <div class="single-project-content">
+                            <p class="text-[--primaryColor] text-[19px] capitalize pt-5">web design</p>
+                            <h3 class="text-2xl capitalize">AirCalling Landing Page Design</h3>
+                        </div>
+                    </div>
+                    <div class="single-project">
+                        <div class="single-project-img bg-[--projectBg] px-4 rounded-lg">
+                            <div class="relative max-w-[445px] mx-auto">
+                                <img src="assets/img/project2.png" alt="" class="max-w-[274px] absolute bottom-[-3px] left-5">
+                                <img src="assets/img/project-bg-2.png" alt="" class="max-w-[274px] ms-auto">
+                            </div>
+                        </div>
+                        <div class="single-project-content">
+                            <p class="text-[--primaryColor] text-[19px] capitalize pt-5">web design</p>
+                            <h3 class="text-2xl capitalize">Business Landing Page Design</h3>
+                        </div>
+                    </div>
+                    <div class="single-project">
+                        <div class="single-project-img bg-[--projectBg] px-4 rounded-lg">
+                            <div class="relative max-w-[445px] mx-auto">
+                                <img src="assets/img/project3.png" alt="" class="max-w-[274px] absolute bottom-[-3px] left-5">
+                                <img src="assets/img/project-bg-3.png" alt="" class="max-w-[274px] ms-auto">
+                            </div>
+                        </div>
+                        <div class="single-project-content">
+                            <p class="text-[--primaryColor] text-[19px] capitalize pt-5">web design</p>
+                            <h3 class="text-2xl capitalize">Ecom Web Page Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end projects section  -->
+
+    <!-- start testimonials section  -->
+     <section class="testimonials-section my-20">
+        <div class="container mx-auto">
+            <div class="testimonials-wrap">
+                <div class="title max-w-[800px] mx-auto">
+                    <h2 class="text-4xl md:text-[65px] md:leading-[97px] capitalize font-bold text-center">testimonials</h2>
+                    <p class="leading-6 pt-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eos, maiores et officiis nam expedita explicabo tenetur soluta inventore.</p>
+                </div>
+                <!-- swiper slide  -->
+                <div class="slide pt-14">
+                    <div class="latest-projects swiper-wrapper">
+                        <div class="single-latest-project swiper-slide max-w-[1087px] bg-[--serviceBgColor] px-5 lg:px-10 py-5 rounded-lg mx-auto">
+                            <div class="flex items-center gap-5 lg:gap-10">
+                                <img src="assets/img/testimonial1.png" alt="" class="w-[130px] lg:w-[235px]">
+                                <div class="single-latest-project-content">
+                                    <p class="text-[--grayColor] text-[21px] leading-[29px]"><span class="text-[--primaryColor] text-[32px] italic leading-3">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, adipisci.<span class="text-[--primaryColor] text-[32px] italic leading-3">"</span></p>
+                                    <h3 class="font-medium text-2xl pt-2 capitalize">name</h3>
+                                    <p class="uppercase text-[19px]">Ceo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-latest-project swiper-slide max-w-[1087px] bg-[--serviceBgColor] px-5 lg:px-10 py-5 rounded-lg mx-auto">
+                            <div class="flex items-center gap-5 lg:gap-10">
+                                <img src="assets/img/testimonial2.png" alt="" class="w-[130px] lg:w-[235px]">
+                                <div class="single-latest-project-content">
+                                    <p class="text-[--grayColor] text-[21px] leading-[29px]"><span class="text-[--primaryColor] text-[32px] italic leading-3">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, adipisci.<span class="text-[--primaryColor] text-[32px] italic leading-3">"</span></p>
+                                    <h3 class="font-medium text-2xl pt-2 capitalize">name</h3>
+                                    <p class="uppercase text-[19px]">Ceo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-latest-project swiper-slide max-w-[1087px] bg-[--serviceBgColor] px-5 lg:px-10 py-5 rounded-lg mx-auto">
+                            <div class="flex items-center gap-5 lg:gap-10">
+                                <img src="assets/img/testimonial1.png" alt="" class="w-[130px] lg:w-[235px]">
+                                <div class="single-latest-project-content">
+                                    <p class="text-[--grayColor] text-[21px] leading-[29px]"><span class="text-[--primaryColor] text-[32px] italic leading-3">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, adipisci.<span class="text-[--primaryColor] text-[32px] italic leading-3">"</span></p>
+                                    <h3 class="font-medium text-2xl pt-2 capitalize">name</h3>
+                                    <p class="uppercase text-[19px]">Ceo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-latest-project swiper-slide max-w-[1087px] bg-[--serviceBgColor] px-5 lg:px-10 py-5 rounded-lg mx-auto">
+                            <div class="flex items-center gap-5 lg:gap-10">
+                                <img src="assets/img/testimonial2.png" alt="" class="w-[130px] lg:w-[235px]">
+                                <div class="single-latest-project-content">
+                                    <p class="text-[--grayColor] text-base lg:text-[21px] leading-[29px]"><span class="text-[--primaryColor] text-[32px] italic leading-3">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, adipisci.<span class="text-[--primaryColor] text-[32px] italic leading-3">"</span></p>
+                                    <h3 class="font-medium text-2xl pt-2 capitalize">name</h3>
+                                    <p class="uppercase text-[19px]">Ceo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>                                
+            </div>
+        </div>
+     </section>
+    <!-- end testimonials section  -->
+
+    <!-- start contact section  -->
+     <section class="contact-section my-20">
+        <div class="container mx-auto">
+            <div class="contact-wrap">
+                <div class="title max-w-[800px] mx-auto">
+                    <h2 class="text-3xl md:text-[65px] md:leading-[97px] capitalize font-bold text-center">Lets Design Together</h2>
+                    <p class="leading-6 pt-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eos, maiores et officiis nam expedita explicabo tenetur soluta inventore.</p>
+                </div>
+                <div class="pt-7">
+                    <form class="flex gap-1 md:gap-3 justify-center">
+                        <input type="email" placeholder="Enter your email" class="block text-sm capitalize bg-[--serviceBgColor] border px-3 py-2 rounded-lg max-w-[627px] w-full">
+                        <input type="submit" value="Contact Me" class="bg-[--primaryColor] text-[--whiteColor] px-6 py-2 rounded-md inline-block duration-300 hover:bg-[--blackColor]">
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end contact section  -->
+
+    <!-- start footer section  -->
+     <footer class="footer-section bg-[--serviceBgColor]">
+        <div class="container mx-auto">
+            <div class="footer-wrap text-center py-10">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="" class="mx-auto">
+                </div>
+                <nav class="footer-menu pt-4">
+                    <ul>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">home</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">about me</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">services</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">projects</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">testimonials</a></li>
+                        <li class="md:px-1 lg:px-2 xl:px-3"><a href="#" class="capitalize hover:text-[--primaryColor] duration-300">contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="social-media">
+                    <ul class="text-center py-4">
+                        <li class="pe-2"><a href="#"><i class="fa-brands fa-facebook text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                        <li class="px-2"><a href="#"><i class="fa-brands fa-twitter text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                        <li class="px-2"><a href="#"><i class="fa-brands fa-instagram text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                        <li class="px-2"><a href="#"><i class="fa-brands fa-linkedin text-3xl hover:text-[--primaryColor] duration-300"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bg-[--grayishColor] py-3">
+            <p class="text-center text-[--whiteColor] font-normal">&copy; 2023 <span class="text-[--primaryColor]">Mumair</span> All Rights Reserved , Inc.</p>
+        </div>
+     </footer>
+    <!-- end footer section  -->
+
+
+   <script src="assets/js/app.js"></script>
+</body>
+</html>

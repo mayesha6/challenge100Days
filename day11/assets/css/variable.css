@@ -1,0 +1,7 @@
+:root{
+    --LightGrayishViolet: hsl(270, 3%, 87%);
+    --DarkGrayishViolet: hsl(279, 6%, 55%);
+    --VeryDarkViolet: hsl(278, 68%, 11%);
+
+}
+/* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */

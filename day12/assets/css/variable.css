@@ -1,0 +1,10 @@
+:root{
+    --primaryColor:rgba(253, 111, 0, 1);
+    --whiteColor:rgba(255, 255, 255, 1);
+    --blackColor:rgba(0, 0, 0, 1);
+    --bgImgColor: rgba(253, 111, 0, 0.6);
+    --serviceBgColor:rgba(248, 248, 248, 1);
+    --projectBg:rgba(255, 235, 219, 1);
+    --grayColor:rgba(66, 66, 66, 1);
+    --grayishColor:rgba(84, 84, 84, 1);
+}
