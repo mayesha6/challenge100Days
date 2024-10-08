@@ -4,10 +4,12 @@ import { UserInformation } from '../UserInformation/UserInformation'
 
 const Register = () => {
     const [userData, setUserData] = useState({});
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
     const handleUserData = (data) =>{
         console.log(data)
         setUserData(data)
+        setIsFormSubmitted(true)
     }
   return (
     <>
@@ -25,13 +27,15 @@ const Register = () => {
             </div>
         </div>
     </section>   
-    <section className="user-info-section my-10">
-        <div className="container mx-auto">
-            <div className="user-info-wrap">
-                <UserInformation showUserData={userData}/>
-            </div>
-        </div>   
-    </section> 
+    {isFormSubmitted && (
+        <section className="user-info-section my-10">
+            <div className="container mx-auto">
+                <div className="user-info-wrap">
+                    <UserInformation showUserData={userData}/>
+                </div>
+            </div>   
+        </section>
+    )} 
     </>
 
   )
